@@ -1,0 +1,197 @@
+/****************************/
+/* jacob johnson
+/* ep 491
+/* harmony machine styles
+/****************************/
+/*
+/* color palette:
+/*		dark teal:
+/*			#3E616A;
+/*		sky blue:
+/*			#89D5EA;
+/*		pale periwinkle:
+/*			#D2E7ED;
+/*		grey:
+/*			#5E686A;
+/*		mellow blue:
+/*			#6EAABB;
+/*
+/*
+/*
+/*/
+
+
+/* reset all */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* main elements */
+
+body {
+    font-family: "Helvetica";
+	background-color: #5E686A;
+}
+
+p {
+	font-size: 13px;
+}
+
+/* divs */
+
+.display {
+	margin: 0 auto;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 0 0 12px 12px;
+
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 87%;
+	min-height: 100px;
+
+
+	background-color: #6EAABB;
+	opacity: 0.8;
+}
+
+.chordDisplay {
+	position: relative;
+	top: 40px;
+}
+
+.topLine {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 95.5%;
+	right: 0%;
+	border-width: 2px;
+	border-style: none none solid;
+	border-color: black;
+
+	margin: 5px 5px 0 5px;
+
+	z-index: 10;
+}
+
+
+h1, h2 {
+	text-decoration: underline;
+	padding: 0 0 10px 0;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-size: 20px;
+	letter-spacing: 3px;
+
+	position: fixed;
+}
+
+/* interactive */
+
+select, #playButton, .chordTog {
+	border: thin solid black;
+	border-radius: 7px;
+	background-color: #89D5EA;
+	outline-color: #6EAABB;
+
+	opacity: 0.8;
+    -webkit-transition: .4s;
+    transition: opacity background-color .4s;
+}
+
+#playButton{
+	position: absolute;
+	left: 180px;
+
+	padding: 5px 30px 5px 30px;
+	margin: 0px 0px 10px 50px;
+}
+
+#playButton:hover, select:hover, .chordTog:hover {
+	background-color: #99D5EC;
+	opacity: 1;
+}
+
+#tempoContainer{
+	position: absolute;
+	left: 320px;
+	top: 45px;
+}
+
+#doContainer{
+	position: absolute;
+	left: 480px;
+	top: 45px;
+}
+
+#rhythmContainer{
+	position: absolute;
+	left: 640px;
+	top: 45px;
+}
+
+#paramContainer{
+	position: absolute;
+	left: 800px;
+	top: 45px;
+}
+
+#chordSelection{
+	position: absolute;
+	left: 4px;
+	top: 87px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #5E686A;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .4s;
+    transition: opacity .4s;
+
+    margin: 0 auto;
+    margin-top: 0px;
+
+    width: 135px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    background: #89D5EA;
+    border-radius: 30px;
+}

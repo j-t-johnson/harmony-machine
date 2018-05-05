@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Harmony Machine</title>
+        <script src="js/p5.js"></script>
+        <script src="js/Tone.js"></script>
+        <script src="js/app.js"></script>
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <!-- begin app -->
+    <body>
+        <header>
+            <div class="topLine">
+                <h1>Harmony Machine</h1>
+                <input type="button" id="playButton" value="start"></input>
+            </div>
+            <div class="display">
+                <div class="chordDisplay">
+                    <h2>chords played:</h2>
+                    <p id="allchords">---<p>
+                </div>
+                <div class="sliderDisplay" id="tempoContainer">
+                    <h2 id="tempoDisplay">tempo: 100 bpm</h2>
+                    <input class="slider" type="range" id="tSlider" min="60" max="170" value="100" step="1">
+                </div>
+                <div class="sliderDisplay" id="doContainer">
+                    <h2 id="pitchClass">tonal center: --- </h2>
+                    <input class="slider" type="range" id="centerDo" min="45" max="56" value="45">
+                </div>
+                <div class="sliderDisplay" id="rhythmContainer">
+                    <h2>rhythmic density:</h2>
+                    <input class="slider" type="range" id="rSlider" min="0" max="1" value="0.5" step="0.1">
+                </div>
+                <div class="sliderDisplay" id="paramContainer">
+                    <h2>instrument:</h2>
+                    <select name="source" class="choice" id="paramSel">
+                        <option value="pad">pad</option>
+                        <option value="bass">bass</option>
+                        <option value="bongo">bongo</option>
+                    </select>
+                </div>
+                <!-- <div class="sliderDisplay" id="chordSelection">
+                    <h2>available chords:</h2>
+                    <input type="button" class="chordTog" id="c0">
+                    <input type="button" class="chordTog" id="c1">
+                    <input type="button" class="chordTog" id="c2">
+                    <input type="button" class="chordTog" id="c3">
+                    <input type="button" class="chordTog" id="c4">
+                    <input type="button" class="chordTog" id="c5">
+                    <input type="button" class="chordTog" id="c6">
+                    <input type="button" class="chordTog" id="c7">
+                    <input type="button" class="chordTog" id="c8">
+                    <input type="button" class="chordTog" id="c9">
+                    <input type="button" class="chordTog" id="c10">
+                    <input type="button" class="chordTog" id="c11">
+                    <input type="button" class="chordTog" id="c12">
+                    <input type="button" class="chordTog" id="c13">
+                    <input type="button" class="chordTog" id="c14">
+                    <input type="button" class="chordTog" id="c15">
+                </div> -->
+            </div>
+        </header>
+    </body>
+    <!-- end app -->
+</html>
